@@ -22,9 +22,9 @@ To run the tests for just a *single* concept:
 
 ## Pulling Down Repo Changes
 
-You have now cloned your forked version of JSFun to your machine. As instructors make changes to the repo (adding exercises, fixing tests, changing problems, etc.) you'll need to pull down those changes. In order to do so, we must link your copy of JSFun on your machine to the Turing github version by adding a new remote repository.
+You have now cloned your forked version of JSFunner to your machine. As instructors make changes to the repo (adding exercises, fixing tests, changing problems, etc.) you'll need to pull down those changes. In order to do so, we must link your copy of JSFunner on your machine to the Turing github version by adding a new remote repository.
 
-In your terminal, from within the root of your JSFun project directory, run:
+In your terminal, from within the root of your JSFunner project directory, run:
 
 `git remote add turing https://github.com/turingschool-examples/jsFun.git`
 
