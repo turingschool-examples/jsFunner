@@ -1,0 +1,18 @@
+{
+  "name": "jsfuntivities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/ --reporter dot --require mocha-clean; ./node_modules/.bin/eslint prototypes/index.js",
+    "testPrototypes": "./node_modules/mocha/bin/mocha test/prototype-test.js --reporter dot --require mocha-clean; ./node_modules/.bin/eslint prototypes/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.25.0",
+    "mocha": "^8.3.2",
+    "mocha-clean": "^1.0.0"
+  }
+}

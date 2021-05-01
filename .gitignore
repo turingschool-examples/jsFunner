@@ -1,0 +1,11 @@
+/node_modules
+
+.npm
+
+.eslintcache
+
+.env
+
+*.log
+
+npm-debug.log*
