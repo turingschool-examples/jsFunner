@@ -17,31 +17,32 @@ const cities = {
   houston: {
     state: 'TX - Texas',
     region: 'Southwest',
-    topAttractions: []
+    topAttractions: ['Space Center', 'Museum of Fine Art', 'Houston Zoo']
   },
   phoenix: {
     state: 'AZ - Arizona',
     region: 'Southwest',
-    topAttractions: []
+    topAttractions: ['Musical Instrument Museum', 'Desert Botanical Garden', 'Camelback Mountain']
   },
   philadelphia: {
     state: 'PA - Pennsylvania',
     region: 'Northeast',
-    topAttractions: []
+    topAttractions: ['Libery Bell', 'The Academy of Natural Sciences', 'Longwood Gardens']
   },
   seattle: {
     state: 'WA - Washington',
     region: 'West',
-    topAttractions: []
+    topAttractions: ['Chihuly Garden and Glass', 'Pike Place Market', 'Kerry Park']
   },
   memphis: {
     state: 'TN - Tennessee',
     region: 'Southeast',
-    topAttractions: []
+    topAttractions: ['Graceland', 'National Civil Rights Museum', 'Beale Street']
   },
   louisville: {
     state: 'KY - Kentucky',
-    topAttractions: []
+    region: 'Southeast',
+    topAttractions: ['Louisville Slugger Museum & Factory', 'Churchill Downs', 'Evan Williams Bourbon Experience']
   }
 }
 
