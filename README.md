@@ -2,7 +2,7 @@
 
 jsFun but make it MORE fun!   
 
-This repo is specifically designed for repeaters to continue getting reps with prototypes, scope and context with some brand new exercises. 
+This repo is specifically designed for repeaters to continue getting reps with prototypes with some brand new exercises. 
 
 ## Getting Started
 

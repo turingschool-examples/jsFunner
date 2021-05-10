@@ -8,7 +8,7 @@ const {
 
 describe('PROTOTYPES', () => {
   describe("City Prompts", () => {
-    it("locateWesternCities", () => {
+    it("locateAnyWesternCities", () => {
       const e = cityPrompts.locateWesternCities();
       const result = ["denver", "chicago", "houston", "phoenix", "seattle"];
 
@@ -24,6 +24,15 @@ describe('PROTOTYPES', () => {
       const e = cityPrompts.listStateAbbreviations();
       const result = ["CO", "IL", "GA", "TX", "AZ", "PA", "WA", "TN", "KY"];
 
+      expect(e).to.deep.equal(result);
+    });
+    it("findAttractionsByRegion", () => {
+      const e = cityPrompts.listStateAbbreviations('southeast');
+      const result =   [
+       { georgia: ['World of Coca-Cola', 'Georgia Aquarium', 'MODA'] },
+       { Tennessee: ['Graceland', 'National Civil Rights Museum', 'Beale Street'] },
+       { Kentucky: ['Louisville Slugger Museum & Factory', 'Churchill Downs', 'Evan Williams Bourbon Experience'] }
+     ];
       expect(e).to.deep.equal(result);
     });
   });
