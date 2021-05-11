@@ -55,4 +55,6 @@ const slackChannels = [
     numPins: 9,
     latestPost: '05/10/21'
   }
-]
+];
+
+module.exports = { slackChannels }
