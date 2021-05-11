@@ -3,30 +3,31 @@ const expect = chai.expect;
 
 const {
   cityPrompts,
-  slackChannelPrompts
+  slackChannelPrompts,
+  fitnessCenterPrompts
 } = require("../prototypes/index");
 
 describe('PROTOTYPES', () => {
   describe("City Prompts", () => {
-    it("locateAllWesternCities", () => {
+    it.skip("locateAllWesternCities", () => {
       const e = cityPrompts.locateAllWesternCities();
       const result = ["denver", "chicago", "houston", "phoenix", "seattle"];
 
       expect(e).to.deep.equal(result);
     });
-    it("alphabatizeCities", () => {
+    it.skip("alphabatizeCities", () => {
       const e = cityPrompts.alphabatizeCities();
       const result = ["atlanta", "chicago", "denver", "houston", "louisville", "memphis", "philadelphia", "phoenix", "seattle"];
 
       expect(e).to.deep.equal(result);
     });
-    it("listStateAbbreviations", () => {
+    it.skip("listStateAbbreviations", () => {
       const e = cityPrompts.listStateAbbreviations();
       const result = ["CO", "IL", "GA", "TX", "AZ", "PA", "WA", "TN", "KY"];
 
       expect(e).to.deep.equal(result);
     });
-    it("findAttractionsByRegion", () => {
+    it.skip("findAttractionsByRegion", () => {
       const e = cityPrompts.listStateAbbreviations('southeast');
       const result =   [{ georgia: ['World of Coca-Cola', 'Georgia Aquarium', 'MODA']}, { tennessee: ['Graceland', 'National Civil Rights Museum', 'Beale Street'] }, { kentucky: ['Louisville Slugger Museum & Factory', 'Churchill Downs', 'Evan Williams Bourbon Experience']}];
 
@@ -35,13 +36,13 @@ describe('PROTOTYPES', () => {
   });
 
   describe("Slack Channel Prompts", () => {
-    it("findTotalNumberPins", () => {
+    it.skip("findTotalNumberPins", () => {
       const e = slackChannelPrompts.findTotalNumberPins();
       const result = 70;
 
       expect(e).to.deep.equal(result);
     });
-    it("findLeastActiveChannel", () => {
+    it.skip("findLeastActiveChannel", () => {
       const e = slackChannelPrompts.findLeastActiveChannel();
 
       const result = {
@@ -54,7 +55,7 @@ describe('PROTOTYPES', () => {
 
       expect(e).to.deep.equal(result);
     });
-    it("organizeByPrivacyLevel", () => {
+    it.skip("organizeByPrivacyLevel", () => {
       const e = slackChannelPrompts.organizeByPrivacyLevel();
 
       const result = {
@@ -70,10 +71,26 @@ describe('PROTOTYPES', () => {
 
       expect(e).to.deep.equal(result);
     });
-    it("findLargestChannel", () => {
+    it.skip("findLargestChannel", () => {
       const e = slackChannelPrompts.findLargestChannel();
       const result = 'health-wellness';
       
+      expect(e).to.deep.equal(result);
+    });
+  });
+
+  describe('Fitness Center Prompts', () => {
+    it.skip("findTrainerInBudget Ron", () => {
+    const e = fitnessCenterPrompts.findTrainerInBudget('Ron');
+     const result = ['Tammy', 'Jean-Ralphio', 'Bobby Newport'];
+
+     expect(e).to.deep.equal(result);
+   });
+
+    it.skip("findTrainerInBudget Andy", () => {
+      const e = fitnessCenterPrompts.findTrainerInBudget('Andy');
+      const result = 'Sorry, no trainers available at this rate!';
+
       expect(e).to.deep.equal(result);
     });
   })

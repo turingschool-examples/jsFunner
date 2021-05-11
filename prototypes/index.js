@@ -1,5 +1,7 @@
 const { cities } = require('./datasets/cities');
 const { slackChannels } = require('./datasets/slackChannels');
+const { trainers, exercisers } = require('./datasets/fitnessCenter');
+
 
 // DATASET: cities from ./datasets/cities
 const cityPrompts = {
@@ -41,8 +43,18 @@ const cityPrompts = {
     const result = 'REPLACE WITH YOUR RESULT HERE';
     return result;
   }
-}
+};
 
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+
+
+// DATASET: slackChannels from ./datasets/slackChannels
 const slackChannelPrompts = {
   findTotalNumberPins() {
   // Return the total number of pinned posts across the Slack community
@@ -91,19 +103,29 @@ const slackChannelPrompts = {
     const result = 'REPLACE WITH YOUR RESULT HERE';
     return result;
   }
-}
-
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-// ---------------------------------------------------------------------------
-
-// DATASET: slackChannels from ./datasets/slackChannels
+};
 
 
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+
+const fitnessCenterPrompts = {
+  findTrainerInBudget(currentExerciser) {
+  // Return a list of trainers that are in a given exerciser's budget. Make sure you handle a scenario where an exerciser does not have enough money for a trainer.
+
+    // Passing in 'Ron' should return -> ['Tammy', 'Jean-Ralphio', 'Bobby Newport']
+    // Passing in 'Andy' should return -> 'Sorry, no trainers available at this rate!
+    const result = 'REPLACE WITH YOUR RESULT HERE';
+    return result;
+  }
+};
 
 module.exports = {
   cityPrompts,
-  slackChannelPrompts
+  slackChannelPrompts,
+  fitnessCenterPrompts
 };
