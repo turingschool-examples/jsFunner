@@ -12,13 +12,9 @@ Check out [this video](https://vimeo.com/turing/review/388545928/baac6f5a2d) if 
 
 ## Running the Tests
 
-To run all tests for all three concepts:
+To run all tests 
 
 `npm test`
-
-To run the tests for just a *single* concept:
-
-`npm run testPrototypes`
 
 ## Pulling Down Repo Changes
 
