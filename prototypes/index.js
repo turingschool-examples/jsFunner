@@ -127,9 +127,26 @@ const fitnessCenterPrompts = {
     // Return the first trainer that specializes in all of an exerciser's interest areas. For example, Mark is interested in both 'yoga' and 'cardio' so he would like a trainer that can teach both. 
     // Passing in 'Mark' should return 'Bobby Newport'
     // Passing in 'Jerry' should return 'Donna'
-    
+
     const result = 'REPLACE WITH YOUR RESULT HERE';
     return result;
+  },
+
+  organizeTrainersBySpecialty() {
+    // Return an object that has all fitness areas as a key with an array of the trainers that teach that type of class.
+
+    // -> {
+  //   strength: ['Tammy', 'Donna', 'Mona-Lisa', 'Bobby Newport'],
+  //     cardio: ['Tammy', 'Bobby Newport'],
+  //       yoga: ['Chris', 'Jean-Ralphio', 'Donna', 'Mona-Lisa', 'Bobby Newport'],
+  //         meditation: ['Chris', 'Mona-Lisa'],
+  //           recovery: ['Chris', 'Donna'],
+  //             pilates: ['Jean-Ralphio', 'Mona-Lisa', 'Bobby Newport']
+  // };
+
+    const result = 'REPLACE WITH YOUR RESULT HERE';
+    return result;
+
   }
 };
 

@@ -112,5 +112,19 @@ describe('PROTOTYPES', () => {
 
       expect(e).to.deep.equal(result);
     });
+
+    it.skip("organizeTrainersBySpecialty", () => {
+      const e = fitnessCenterPrompts.organizeTrainersBySpecialty();
+      const result = {
+        strength: ['Tammy', 'Donna', 'Mona-Lisa', 'Bobby Newport'],
+        cardio: ['Tammy', 'Bobby Newport'],
+        yoga: ['Chris', 'Jean-Ralphio', 'Donna', 'Mona-Lisa', 'Bobby Newport'],
+        meditation: ['Chris', 'Mona-Lisa'],
+        recovery: ['Chris', 'Donna'],
+        pilates: ['Jean-Ralphio', 'Mona-Lisa', 'Bobby Newport']
+      };
+
+      expect(e).to.deep.equal(result);
+    });
   })
 });
