@@ -121,6 +121,15 @@ const fitnessCenterPrompts = {
     // Passing in 'Andy' should return -> 'Sorry, no trainers available at this rate!
     const result = 'REPLACE WITH YOUR RESULT HERE';
     return result;
+  },
+
+  findTrainerForInterest(exerciser) {
+    // Return the first trainer that specializes in all of an exerciser's interest areas. For example, Mark is interested in both 'yoga' and 'cardio' so he would like a trainer that can teach both. 
+    // Passing in 'Mark' should return 'Bobby Newport'
+    // Passing in 'Jerry' should return 'Donna'
+    
+    const result = 'REPLACE WITH YOUR RESULT HERE';
+    return result;
   }
 };
 

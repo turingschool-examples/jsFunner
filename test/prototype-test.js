@@ -28,8 +28,13 @@ describe('PROTOTYPES', () => {
       expect(e).to.deep.equal(result);
     });
     it.skip("findAttractionsByRegion", () => {
-      const e = cityPrompts.listStateAbbreviations('southeast');
-      const result =   [{ georgia: ['World of Coca-Cola', 'Georgia Aquarium', 'MODA']}, { tennessee: ['Graceland', 'National Civil Rights Museum', 'Beale Street'] }, { kentucky: ['Louisville Slugger Museum & Factory', 'Churchill Downs', 'Evan Williams Bourbon Experience']}];
+      const e = cityPrompts.listStateAbbreviations("southeast");
+      const result = [{
+        georgia: ["World of Coca-Cola", "Georgia Aquarium", "MODA"]
+      }, {
+        tennessee: ["Graceland", "National Civil Rights Museum", "Beale Street"]
+        }, {
+        kentucky: ["Louisville Slugger Museum & Factory", "Churchill Downs", "Evan Williams Bourbon Experience"]}];
 
       expect(e).to.deep.equal(result);
     });
@@ -46,11 +51,11 @@ describe('PROTOTYPES', () => {
       const e = slackChannelPrompts.findLeastActiveChannel();
 
       const result = {
-        title: '#code-fare',
+        title: "#code-fare",
         isPrivate: false,
         memberCount: 410,
         numPins: 5,
-        latestPost: '05/06/21'
+        latestPost: "05/06/21"
       };
 
       expect(e).to.deep.equal(result);
@@ -59,13 +64,13 @@ describe('PROTOTYPES', () => {
       const e = slackChannelPrompts.organizeByPrivacyLevel();
 
       const result = {
-        privateChannels: ['#instructional-staff', '#turing-jcs', '#staff'],
+        privateChannels: ["#instructional-staff", "#turing-jcs", "#staff"],
         publicChannels: [
-          '#health-wellness',
-          '#unlearning-white-supremacy',
-          '#code-fare',
-          '#nature-appreciation',
-          '#fitness'
+          "#health-wellness",
+          "#unlearning-white-supremacy",
+          "#code-fare",
+          "#nature-appreciation",
+          "#fitness"
         ]
       };
 
@@ -73,7 +78,7 @@ describe('PROTOTYPES', () => {
     });
     it.skip("findLargestChannel", () => {
       const e = slackChannelPrompts.findLargestChannel();
-      const result = 'health-wellness';
+      const result = "health-wellness";
       
       expect(e).to.deep.equal(result);
     });
@@ -81,15 +86,29 @@ describe('PROTOTYPES', () => {
 
   describe('Fitness Center Prompts', () => {
     it.skip("findTrainerInBudget Ron", () => {
-    const e = fitnessCenterPrompts.findTrainerInBudget('Ron');
-     const result = ['Tammy', 'Jean-Ralphio', 'Bobby Newport'];
+      const e = fitnessCenterPrompts.findTrainerInBudget("Ron");
+      const result = ["Tammy", "Jean-Ralphio", "Bobby Newport"];
 
      expect(e).to.deep.equal(result);
    });
 
     it.skip("findTrainerInBudget Andy", () => {
-      const e = fitnessCenterPrompts.findTrainerInBudget('Andy');
-      const result = 'Sorry, no trainers available at this rate!';
+      const e = fitnessCenterPrompts.findTrainerInBudget("Andy");
+      const result = "Sorry, no trainers available at this rate!";
+
+      expect(e).to.deep.equal(result);
+    });
+
+    it.skip("findTrainerForInterest Mark", () => {
+      const e = fitnessCenterPrompts.findTrainerForInterest("Mark");
+      const result = "Bobby Newport";
+
+      expect(e).to.deep.equal(result);
+    });
+
+    it.skip("findTrainerForInterest Jerry", () => {
+      const e = fitnessCenterPrompts.findTrainerForInterest("Mark");
+      const result = "Donna";
 
       expect(e).to.deep.equal(result);
     });
