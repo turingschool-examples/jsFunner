@@ -28,7 +28,7 @@ describe('PROTOTYPES', () => {
       expect(e).to.deep.equal(result);
     });
     it.skip("findAttractionsByRegion", () => {
-      const e = cityPrompts.listStateAbbreviations("southeast");
+      const e = cityPrompts.findAttractionsByRegion("southeast");
       const result = [{
         georgia: ["World of Coca-Cola", "Georgia Aquarium", "MODA"]
       }, {
